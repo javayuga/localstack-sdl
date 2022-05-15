@@ -1,4 +1,10 @@
-# localstack minimal with s3 and dynamodb
+# localstack minimal
+
+base project for Python localstack pipeline
+
+## s3 and dynamodb
+
+sets up these services: s3 and dynamoDB (AWS Lambda will be added later)
 
 ## install pre-reqs
 
@@ -149,7 +155,7 @@ get [NoSQL Workbench](https://docs.aws.amazon.com/amazondynamodb/latest/develope
 
 6. follow the screenshots
 
-![alt text](docs/img/dyn_00.png "00")
+![alt text](docsgdyn_00.png "00")
 ![alt text](docs/img/dyn_01.png "01")
 ![alt text](docs/img/dyn_02.png "02")
 ![alt text](docs/img/dyn_03.png "03")
