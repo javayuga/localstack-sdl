@@ -64,7 +64,7 @@ $ aws --endpoint-url=http://localhost:4566 s3 ls s3://mybucket
 
 Download CyberDuck visualizer from [here](https://cyberduck.io/download/)
 
-![alt text](img\s3_00.png "07")
+![alt text](img/s3_00.png "07")
 
 
 ## Dynamodb-admin on localstack
