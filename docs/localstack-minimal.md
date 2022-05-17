@@ -64,7 +64,7 @@ $ aws --endpoint-url=http://localhost:4566 s3 ls s3://mybucket
 
 Download CyberDuck visualizer from [here](https://cyberduck.io/download/)
 
-![alt text](docs/img/s3_00.png "07")
+![alt text](img\s3_00.png "07")
 
 
 ## Dynamodb-admin on localstack
@@ -156,15 +156,15 @@ get [NoSQL Workbench](https://docs.aws.amazon.com/amazondynamodb/latest/develope
 
 6. follow the screenshots
 
-![alt text](docsgdyn_00.png "00")
-![alt text](docs/img/dyn_01.png "01")
-![alt text](docs/img/dyn_02.png "02")
-![alt text](docs/img/dyn_03.png "03")
+![alt text](img/dyn_00.png "00")
+![alt text](img/dyn_01.png "01")
+![alt text](img/dyn_02.png "02")
+![alt text](img/dyn_03.png "03")
 connection name : locdyn_alstack port : 4566
-![alt text](docs/img/dyn_04.png "04")
-![alt text](docs/img/dyn_05.png "05")
-![alt text](docs/img/dyn_06.png "06")
-![alt text](docs/img/dyn_07.png "07")
+![alt text](img/dyn_04.png "04")
+![alt text](img/dyn_05.png "05")
+![alt text](img/dyn_06.png "06")
+![alt text](img/dyn_07.png "07")
 
 
 
