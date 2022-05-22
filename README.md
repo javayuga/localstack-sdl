@@ -6,6 +6,7 @@ base project for Python AWS pipeline (using localstack)
 
 [localstack-setup](docs/localstack-minimal.md)
 
-## Roadmap
+## first tutorial
 
-follow [TESTING PYTHON AWS APPLICATIONS USING LOCALSTACK](https://hands-on.cloud/testing-python-aws-applications-using-localstack/#h-connect-to-localstack-services-using-boto3)
+[hello_boto.py](docs/hello_boto.md)
+
