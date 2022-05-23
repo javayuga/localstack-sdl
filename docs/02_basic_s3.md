@@ -1,5 +1,4 @@
-# uploads a file to s3
-# upload, and download a file
+# S3 upload, and download
 
 ## 02_upload_file.py
 

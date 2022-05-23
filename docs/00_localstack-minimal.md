@@ -173,7 +173,7 @@ PS D:\pub\localstack-sdl> pip install pipreqs
 Successfully installed docopt-0.6.2 pipreqs-0.4.11 yarg-0.1.9
 PS D:\pub\localstack-sdl> pipreqs --version
 0.4.11
-PS D:\pub\localstack-sdl> pipreqs D:\pub\localstack-sdl\
+PS D:\pub\localstack-sdl> pipreqs D:\pub\localstack-sdl\ --force
 INFO: Successfully saved requirements file in D:\pub\localstack-sdl\requirements.txt
 ```
 
