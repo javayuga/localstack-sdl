@@ -166,7 +166,14 @@ connection name : locdyn_alstack port : 4566
 ![alt text](img/dyn_06.png "06")
 ![alt text](img/dyn_07.png "07")
 
+7. check requirements
 
-
-
+```
+PS D:\pub\localstack-sdl> pip install pipreqs
+Successfully installed docopt-0.6.2 pipreqs-0.4.11 yarg-0.1.9
+PS D:\pub\localstack-sdl> pipreqs --version
+0.4.11
+PS D:\pub\localstack-sdl> pipreqs D:\pub\localstack-sdl\
+INFO: Successfully saved requirements file in D:\pub\localstack-sdl\requirements.txt
+```
 

@@ -9,4 +9,4 @@ base project for Python AWS pipeline (using localstack)
 
 [hello_boto.py](docs/01_hello_boto.md)
 
-[basic s3](docs/02_basic_s3.md)
+[upload_file.py](docs/03_upload_file.md)
