@@ -41,7 +41,7 @@ def create_lambda_zip(function_name):
     """
     try:
         with ZipFile(LAMBDA_ZIP, 'w') as zip:
-            zip.write(function_name + '.py')
+            zip.write('lambda1/{}.py'.format(function_name), arcname='{}.py'.format(function_name))
     except Exception as e:
         logger.exception('Error while creating ZIP file.')
         raise e
