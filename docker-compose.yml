@@ -3,17 +3,37 @@ version: '3.0'
 services:
 
   localstack:
-    image: localstack/localstack:latest
-    environment: 
+    image: localstack/localstack-full:latest
+    ports:
+      - "4566:4566"
+      - "9000:9000"
+
+    environment:
       - AWS_ACCESS_KEY_ID=foo
       - AWS_SECRET_ACCESS_KEY=foo
       - AWS_DEFAULT_REGION=ap-southeast-1
       - EDGE_PORT=4566
-      - SERVICES=dynamodb, s3, lambda
-      - KINESIS_PROVIDER=kinesalite
-    ports:
-      - '4566:4566'
+      - SERVICES=dynamodb, s3, lambda, cloudwatch
+      - DEBUG="1"
+      - DATA_DIR=/tmp/localstack/data # for use by
+      - LAMBDA_EXECUTOR=docker-reuse
+      - LAMBDA_REMOVE_CONTAINERS=1
+      - LAMBDA_DOCKER_NETWORK=profile-network # using a specified network to allow lambda to reach LocalStack
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - PORT_WEB_UI=9000
+      - START_WEB=1
+
     volumes:
       - "${TMPDIR:-/tmp/localstack}:/tmp/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock" 
       - "./initaws:/docker-entrypoint-initaws.d"
+    networks:
+      - profile-network
+
+volumes:
+  localstack-vol:
+
+networks:
+  profile-network:
+    name: profile-network
+    driver: bridge
