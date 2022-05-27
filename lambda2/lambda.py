@@ -28,7 +28,7 @@ def handler(event, context):
     logger.info('Uploading an object to the localstack s3 bucket...')
     logger.info('logger level {}'.format(logger.getEffectiveLevel))
     logger.info('## ENVIRONMENT VARIABLES ##\n{}'.format(os.environ))
-    logger.info('## EVENT ##\n{}'.format(event))
+    logger.info('## EVENT ##\n  {}'.format(event))
 
     object_key = 'hands-on-cloud'
     s3_client.put_object(

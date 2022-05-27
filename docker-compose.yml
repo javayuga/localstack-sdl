@@ -13,7 +13,7 @@ services:
       - AWS_SECRET_ACCESS_KEY=foo
       - AWS_DEFAULT_REGION=ap-southeast-1
       - EDGE_PORT=4566
-      - SERVICES=dynamodb, s3, lambda, cloudwatch
+      - SERVICES=iam, dynamodb, s3, lambda, cloudwatch
       - DEBUG="1"
       - DATA_DIR=/tmp/localstack/data # for use by
       - LAMBDA_EXECUTOR=docker-reuse
